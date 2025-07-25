@@ -2,11 +2,14 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Portfolio Personal</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -14,37 +17,106 @@
         <h1>Daniela 💻</h1>
         <p>Desarrolladora Web | Creativa | Emprendedora</p>
     </header>
-    <section id="sobre-mi">
+
+    <section id="sobre-mi" data-aos="fade-up">
         <h2>Sobre mí</h2>
-        <p>
-            Soy Daniela, desarrolladora web y emprendedora creativa con pasión por el diseño, el marketing y las
-            soluciones digitales. Me encanta transformar ideas en realidades visuales que conecten con las personas.
-            Además, soy mamá de cinco, mentora, y una eterna aprendiz.
-            En mis proyectos busco equilibrio entre funcionalidad y estética, siempre con una mirada humana y
-            profesional.
-        </p>
+        <div class="sobre-mi-contenido">
+            <img src="assets/daniela-ai.png" alt="Retrato de Daniela" class="foto-daniela" />
+            <p>
+                Soy Daniela, desarrolladora web y emprendedora creativa con pasión por el diseño, el marketing y las
+                soluciones digitales. Me encanta transformar ideas en realidades visuales que conecten con las personas.
+                Además, soy mamá de cinco, mentora, y una eterna aprendiz. En mis proyectos busco equilibrio entre
+                funcionalidad y estética, siempre con una mirada humana y profesional.
+            </p>
+        </div>
     </section>
 
-    <section>
+    <section data-aos="fade-up">
         <h2>Proyectos Destacados</h2>
         <div class="proyectos-container">
-            <article class="proyecto-card">
-                <img src="assets/proyecto1.jpg" alt="Captura de pantalla de Biancantada">
+            <article class="proyecto-card" data-aos="zoom-in">
+                <img src="assets/proyecto1.jpg" alt="Captura Biancantada" />
                 <h3>Biancantada - Astro Web</h3>
                 <p>Landing mística hecha con React y Vite para una astróloga profesional.</p>
-                <a href="https://biancantada.netlify.app/" target="_blank" rel="noopener noreferrer">🔗 Ver Proyecto</a>
+                <a href="https://biancantada.netlify.app/" target="_blank">🔗 Ver Proyecto</a>
             </article>
-            <article class="proyecto-card">
-                <img src="assets/proyecto2.jpg" alt="Captura Proyecto 2" />
+            <article class="proyecto-card" data-aos="zoom-in">
+                <img src="assets/proyecto2.jpg" alt="DSM Dev&Design" />
                 <h3>DSM Dev&Design</h3>
                 <p>Desarrollo y diseño para emprendimientos creativos y tecnológicos.</p>
-                <a href="https://dsm-devdesign.netlify.app/" target="_blank" rel="noopener noreferrer">🔗 Ver
-                    Proyecto</a>
+                <a href="https://dsm-devdesign.netlify.app/" target="_blank">🔗 Ver Proyecto</a>
             </article>
         </div>
     </section>
 
-    <section id="contacto">
+    <section id="emprendimientos" data-aos="fade-up">
+        <h2>Emprendimientos</h2>
+        <div class="proyectos-container">
+            <article class="proyecto-card" data-aos="zoom-in">
+                <img src="assets/fenix-logo.png" alt="Logo Fénix Refrigeración" />
+                <h3>Fénix Refrigeración</h3>
+                <p>Servicio técnico de refrigeración y electrodomésticos. Proyecto en desarrollo con identidad
+                    profesional y cercana.</p>
+                <a href="#" onclick="alert('En construcción 😊'); return false;">🚧 Ver más</a>
+            </article>
+            <article class="proyecto-card" data-aos="zoom-in">
+                <img src="assets/proyecto2.jpg" alt="DSM Dev&Design" />
+                <h3>DSM Dev&Design</h3>
+                <p>Agencia creativa de diseño web y branding para emprendedoras.</p>
+                <a href="https://dsm-devdesign.netlify.app/" target="_blank">🌐 Ver sitio</a>
+            </article>
+        </div>
+    </section>
+
+    <section id="invitaciones" data-aos="fade-up">
+        <h2>Invitaciones Personalizadas</h2>
+        <div class="proyectos-container">
+            <article class="proyecto-card" data-aos="zoom-in">
+                <img src="assets/invitacion15.png" alt="Invitación 15 años" />
+                <h3>Fiesta de 15</h3>
+                <p>Diseño elegante y juvenil para celebrar una noche inolvidable.</p>
+                <a href="assets/invitacion15.png" target="_blank">🎉 Ver diseño</a>
+            </article>
+            <article class="proyecto-card" data-aos="zoom-in">
+                <img src="assets/invitacion18.png" alt="Invitación 18 años" />
+                <h3>Cumpleaños 18</h3>
+                <p>Estilo moderno y vibrante para una celebración con personalidad.</p>
+                <a href="assets/invitacion18.png" target="_blank">🎈 Ver diseño</a>
+            </article>
+            <article class="proyecto-card" data-aos="zoom-in">
+                <img src="assets/boda.png" alt="Invitación de boda" />
+                <h3>Boda Elegante</h3>
+                <p>Diseño romántico y sofisticado para ese día tan especial.</p>
+                <a href="assets/boda.png" target="_blank">💌 Ver diseño</a>
+            </article>
+            <article class="proyecto-card" data-aos="zoom-in">
+                <img src="assets/Babyshower.png" alt="Invitación babyshower" />
+                <h3>Babyshower</h3>
+                <p>Dulce y tierno diseño para anunciar la llegada de un nuevo amorcito.</p>
+                <a href="assets/Babyshower.png" target="_blank">🍼 Ver diseño</a>
+            </article>
+        </div>
+    </section>
+
+    <section id="marketing" data-aos="fade-up">
+        <h2>Marketing & Branding</h2>
+        <div class="proyectos-container">
+            <article class="proyecto-card" data-aos="zoom-in">
+                <img src="assets/ig1.png" alt="Post para Instagram" />
+                <h3>Post para redes</h3>
+                <p>Diseño promocional atractivo para redes sociales.</p>
+                <a href="assets/ig1.png" target="_blank">📱 Ver diseño</a>
+            </article>
+            <article class="proyecto-card" data-aos="zoom-in">
+                <img src="assets/brading1.png" alt="Branding visual" />
+                <h3>Branding Visual</h3>
+                <p>Desarrollo de identidad visual para emprendedoras.</p>
+                <a href="assets/brading1.png" target="_blank">🌟 Ver branding</a>
+            </article>
+        </div>
+    </section>
+
+    <section id="contacto" data-aos="fade-up">
         <h2>Contacto</h2>
         <p>¿Querés trabajar conmigo o tenés alguna consulta? ¡Escribime sin compromiso!</p>
         <div class="contact-links">
@@ -54,12 +126,11 @@
             <a href="https://www.instagram.com/dsm.creativas" target="_blank">📷 Instagram</a>
         </div>
         <form name="contact" method="POST" data-netlify="true">
-            <input type="text" name="nombre" placeholder="Tu nombre" required>
-            <input type="email" name="email" placeholder="Tu email" required>
+            <input type="text" name="nombre" placeholder="Tu nombre" required />
+            <input type="email" name="email" placeholder="Tu email" required />
             <textarea name="mensaje" rows="4" placeholder="Tu mensaje..." required></textarea>
             <button type="submit">Enviar</button>
         </form>
-
     </section>
 
     <a href="#" class="flecha-arriba" title="Volver arriba">⬆️</a>
@@ -67,6 +138,26 @@
     <footer>
         <p>&copy; 2025 Daniela – DSM Dev&Design. Todos los derechos reservados.</p>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        document.querySelector('.flecha-arriba').addEventListener('click', e => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".proyecto-card"), {
+            max: 15,
+            speed: 400,
+            glare: true,
+            "max-glare": 0.3
+        });
+    </script>
 
 </body>
 
