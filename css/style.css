@@ -167,6 +167,7 @@ form button:hover {
 .testimonios-carrusel::-webkit-scrollbar {
   height: 6px;
 }
+
 .testimonios-carrusel::-webkit-scrollbar-thumb {
   background-color: var(--color-acento);
   border-radius: 4px;
@@ -179,7 +180,7 @@ form button:hover {
   padding: 1.5rem;
   border-radius: 10px;
   scroll-snap-align: start;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   font-style: italic;
   transition: transform 0.3s ease;
 }
