@@ -141,6 +141,60 @@ form button:hover {
   background-color: #4a0072;
 }
 
+#testimonios {
+  padding: 2rem;
+  background-color: #1e1e1e;
+  border-top: 1px solid #333;
+  text-align: center;
+}
+
+#testimonios h2 {
+  color: var(--color-acento);
+  margin-bottom: 1.5rem;
+}
+
+.testimonios-carrusel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  gap: 1.5rem;
+  padding: 1rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.testimonios-carrusel::-webkit-scrollbar {
+  height: 6px;
+}
+.testimonios-carrusel::-webkit-scrollbar-thumb {
+  background-color: var(--color-acento);
+  border-radius: 4px;
+}
+
+.testimonio {
+  flex: 0 0 300px;
+  background-color: var(--color-acento-secundario);
+  color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  scroll-snap-align: start;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  font-style: italic;
+  transition: transform 0.3s ease;
+}
+
+.testimonio:hover {
+  transform: scale(1.03);
+}
+
+.testimonio h4 {
+  margin-top: 1rem;
+  font-weight: 600;
+  font-style: normal;
+  color: var(--color-texto);
+}
+
 #contacto {
   padding: 2rem;
   background-color: #121212;
