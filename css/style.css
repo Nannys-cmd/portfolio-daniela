@@ -3,6 +3,7 @@
   --color-texto: #f5f5f5;
   --color-acento: #6a1b9a;
   --color-acento-secundario: #8e24aa;
+  --color-acento-hover: #4a0072; /* opcional si lo usás en varios lados */
 }
 
 * {
@@ -208,7 +209,7 @@ h2 {
 
 .flecha-izq,
 .flecha-der {
-  background-color: var(--color-acento);
+  background-color: var(--color-acento-secundario);
   color: white;
   border: none;
   padding: 0.6rem 1rem;
@@ -226,7 +227,7 @@ h2 {
 
 .flecha-izq:hover,
 .flecha-der:hover {
-  background-color: #4a0072;
+  background-color: var(--color-acento-hover);
 }
 
 .testimonios-carrusel {
@@ -333,7 +334,7 @@ h2 {
 }
 
 .flecha-arriba:hover {
-  background-color: #c2185b;
+  background-color: var(--color-acento-hover);
   transform: scale(1.1);
 }
 
